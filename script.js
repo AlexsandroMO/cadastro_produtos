@@ -16,6 +16,7 @@ function salvar(){
       tx.executeSql("CREATE TABLE IF NOT EXISTS myTable (id INTEGER PRIMARY KEY,nome TEXT,fornecedor TEXT, qt INTEGER, cat TEXT, pre INTEGER)");
     });
 
+    console.log('Entrou')
     var nome = document.getElementById('nome').value
     var fornecedor = document.getElementById("fornecedor").value;
     var qt = document.getElementById("qt").value;
@@ -145,9 +146,9 @@ function deletar(){
 }
 
 function decidir(){
-  let status;
-  let nota;
-  let teste = confirm('Deseja Realmnte Adicionar Itens?')
+  var status;
+  var nota;
+  var teste = confirm('Deseja Realmnte Adicionar Itens?')
 
   if (teste == true){
     nota = 'Itens Serão Adicionados'
