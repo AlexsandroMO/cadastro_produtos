@@ -6,7 +6,7 @@ var db = openDatabase('myDB', '2.0', 'Mybase', 1024);
 
 function salvar(){
 
-  status = decidir()
+  let status = decidir()
 
   console.log('ESTATUS: ',status)
 
@@ -145,9 +145,9 @@ function deletar(){
 }
 
 function decidir(){
-  var status;
-  var nota;
-  var teste = confirm('Deseja Realmnte Adicionar Itens?')
+  let status;
+  let nota;
+  let teste = confirm('Deseja Realmnte Adicionar Itens?')
 
   if (teste == true){
     nota = 'Itens Serão Adicionados'
