@@ -7,13 +7,19 @@ var recarregou = sessionStorage.getItem("recarregou");
 // verifica que a página foi atualizada
 if (recarregou) {
     sessionStorage.removeItem("recarregou"); // remove a variável
-    mostrarr(); // executa sua função
+    showAll(); // executa sua função
     console.log('Foi!')
 }
 
 function recarregarPagina() {
   sessionStorage.setItem("recarregou", "true"); // antes de atualizar, você seta uma variável no sessionStorage como true
   window.location.reload(); // atualiza a página
+}
+
+function mostrar(){
+
+  recarregarPagina();
+
 }
 
 
@@ -52,8 +58,8 @@ function salvar(){
 
 }
 
-function mostrar(){
-
+function showAll(){
+    recarregarPagina();
   //new-table
 
   var tabela = document.createElement('table')
