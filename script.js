@@ -2,6 +2,21 @@
 //console.log('funcionou')
 //alert('funcionou')
 
+var recarregou = sessionStorage.getItem("recarregou");
+
+// verifica que a página foi atualizada
+if (recarregou) {
+    sessionStorage.removeItem("recarregou"); // remove a variável
+    mostrarr(); // executa sua função
+    console.log('Foi!')
+}
+
+function recarregarPagina() {
+  sessionStorage.setItem("recarregou", "true"); // antes de atualizar, você seta uma variável no sessionStorage como true
+  window.location.reload(); // atualiza a página
+}
+
+
 var db = openDatabase('myDB', '2.0', 'Mybase', 1024);
 
 function salvar(){
