@@ -84,7 +84,7 @@ function montatBody(){
           var tr = '';
           for(var i = 0; i < rows.length; i++){
                   tr += '<tr>';
-                  tr += '<td onclick="chamaId('+ rows[i].id  +')">' + rows[i].id + '</td>';
+                  tr += '<td onclick="chamaId('+ rows[i].id  +')"><i class="fas fa-edit"></td>';
                   tr += '<td>' + rows[i].nome + ' </td>';
                   tr += '<td>' + rows[i].fornecedor + ' </td>';
                   tr += '<td>' + rows[i].qt + ' </td>';
