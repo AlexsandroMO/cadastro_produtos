@@ -60,7 +60,7 @@ function mostrarr(){
 function montatHead(){
     var cabecalho = document.createElement("thead");
 
-    dado = '<th scope="col">Codigo</th>\
+    dado = '<th scope="col">Editar</th>\
             <th scope="col">Nome</th>\
             <th scope="col">Fornecedor</th>\
             <th scope="col">Quantidade</th>\
