@@ -19,7 +19,7 @@ var recarregou = sessionStorage.getItem("recarregou");
 if (recarregou) {
     sessionStorage.removeItem("recarregou"); // remove a variável
     mostrarr(); // executa sua função
-    console.log('lllllllllllllll')
+    console.log('Foi')
 }
 
 
@@ -84,7 +84,7 @@ function montatBody(){
           var tr = '';
           for(var i = 0; i < rows.length; i++){
                   tr += '<tr>';
-                  tr += '<td onclick="chamaId('+ rows[i].id  +')"><i class="fas fa-edit"></td>';
+                  tr += '<td onclick="chamaId('+ rows[i].id  +')"><i class="fas fa-edit"></i></td>';
                   tr += '<td>' + rows[i].nome + ' </td>';
                   tr += '<td>' + rows[i].fornecedor + ' </td>';
                   tr += '<td>' + rows[i].qt + ' </td>';
