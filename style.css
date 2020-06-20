@@ -8,8 +8,6 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(243, 243, 243);
     /* background: url('img/img1.jpg'); */
-
-
 }
 
 #h3-h3{
@@ -50,4 +48,14 @@ td, th {
 
 thead{
     background-color: #ccc;
+}
+
+.fas.fa-trash, .fas.fa-edit, .fas.fa-check, .fas.fa-angle-double-right{
+    cursor: pointer;
+    margin: 5px;
+    font-size: 20px; 
+}
+
+.fas.fa-edit {
+    color: #13c43f;
 }
